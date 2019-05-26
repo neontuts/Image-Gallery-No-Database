@@ -159,15 +159,15 @@
 		}
 		$pageContainer .= "</ul></nav>";
 
-		echo '<div class="container"><div class="row">' . $pageContainer . '</div></div>';
+		echo '<div class="container"><div class="row justify-content-center">' . $pageContainer . '</div></div>';
 		foreach ($images as $image) {
 			echo '<div class="col-lg-3 col-md-4 col-sm-6">';
 			echo '<a href="view.php?image='.$image.'" class="d-block mb-4 h-100">';
-			echo '	<img class="img-fluid img-thumbnail" src="uploads/thumb/'.$image.'" alt="">';
+			echo '<img class="img-fluid img-thumbnail" src="uploads/thumb/'.$image.'" alt="">';
 			echo '</a>';
 			echo '</div>';
 		}
-		echo '<div class="container"><div class="row">' . $pageContainer . '</div></div>';
+		echo '<div class="container"><div class="row justify-content-center">' . $pageContainer . '</div></div>';
 	}
 
 ?>
