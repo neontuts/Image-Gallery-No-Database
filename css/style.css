@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	margin-bottom: 6rem;
+}
+
+h2.sub-heading {
+	font-size: 24px;
+	font-weight: normal;
+	color: #444;
+}
+
+#gallery h2 {
+	margin-left: 3rem;
+}
+
+#scrollUp {
+	background-image: url(../img/top.png);
+	width: 38px;
+	height: 38px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.navbar {
+	justify-content: space-between;
+	padding: 0.5rem 2rem;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav-link {
+	font-size: 1rem;
+}
+
+.container.showcase {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+.btn-wrapper {
+	text-align: center;
+}
+
+.form-group {
+	padding: 20px;
+}
+
+.btn-wrapper button {
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.placeholder {
+	margin: 0;
+	font-size: 16px;
+}
+
+.viewpage-heading {
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+.alert button {
+	outline: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	#gallery h2 {
+		margin-left: 1rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.showcase h1 {
+		font-size: 1.8rem;
+	}
+	.showcase h2 {
+		font-size: 1.2rem;
+	}
+	.viewpage-heading {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+	}
+	.img-thumbnail {
+		width: 100%;
+	}
+}
+
