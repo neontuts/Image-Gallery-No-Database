@@ -29,10 +29,10 @@
 				echo setAlertMessages($alertTypeError, $alertMessageErrorText);
 			} else if ($upload === 'big-file-size') {
 				echo setAlertMessages($alertTypeBigFileSize, $alertMessageBigFileSizeText);
-			} else if ($upload === 'image-exist'){
-				echo setAlertMessages($alertTypeImageExist, $alertMessageImageExistText);
 			} else if ($upload === 'success') {
 				echo setAlertMessages($alertTypeSuccess, $alertMessageSuccessText);
+			} else if ($upload === 'image-exist') {
+				echo setAlertMessages($alertTypeImageExists, $alertMessageImageExistsText);
 			}
 		}
 	?>
@@ -56,21 +56,8 @@
 		<h2 class="p-3 mb-4 text-uppercase">Gallery</h2>
 		<div class="container">
 			<div class="row">
-
-				<?php
-					$path = 'uploads/thumb';
-					//	Reomving the '..' & '.' from the array
-					$images = array_diff(scandir($path, 1), array('..', '.'));
-
-					foreach ($images as $image) {
-						echo '<div class="col-lg-3 col-md-4 col-sm-6">
-					<a href="view.php?image='.$image.'" class="d-block mb-4 h-100">
-						<img class="img-fluid img-thumbnail" src="uploads/thumb/'.$image.'" alt="">
-					</a>
-				</div>';
-					}
-				?>
-
+				<?php showGallery(); ?>
+			</div>
 		</div>
 	</div>
 
